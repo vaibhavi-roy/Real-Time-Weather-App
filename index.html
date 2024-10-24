@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time-Weather-App</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div id="bgimage"></div>
+  <div id="dropdown">
+    <select name="degree" id="deg" class="dropkey">
+      <option value="C"> °C▼</option>
+      <option value="K"> °K▼</option>
+      <option value="F"> °F▼</option>
+    </select>
+  </div>
+  <br>
+
+  <div class="topcard">
+    <div class="card2">
+      <div class="card">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Search">
+          <button>Go!</button>
+        </div>
+        <div class="weather loading">
+          <h2 class="city">Weather in Mumbai</h2>
+          <h1 class="temp">26.66°C</h1>
+          <h1 class="temp-feels-like">26.00°C</h1>
+          <div class="flex">
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+            <div class="description">Cloudy</div>
+          </div>
+          <p class="dt">22/22/22 22/22/22</p>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="box1">
+          <img src="https://img.icons8.com/ios-filled/50/000000/humidity.png" alt="Humidity Icon" class="icon-humidity">
+
+          <div class="humidity" style="font-weight: bold; font-size:medium;">Humidity: 60%</div>
+        </div>
+        <div class="box1">
+          <img src="https://img.icons8.com/ios-filled/50/000000/wind.png" alt="Wind Icon" class="icon-wind">
+          <div class="wind" style="font-weight: bold; font-size:medium;">Wind speed: 6.2 km/h</div>
+        </div>
+      </div>
+    </div>
+    <div class="card2">
+
+      <div class="card">
+        <div class="box4">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/temperature.png" alt="Average Temperature Icon"
+            class="icon-temp-avg">
+          <h5>Temperature Overview</h5>
+        </div>
+        <div class="temp-boxes">
+          <div class="box">
+            <div class="temp-max" style="font-weight: bold; font-size:medium;">28.1°C</div>
+          </div>
+          <div class="box">
+            <div class="temp-min" style="font-weight: bold; font-size:medium;">22.9°C</div>
+          </div>
+          <div class="box">
+            <div class="temp-avg" style="font-weight: bold; font-size:medium;">25.5°C</div>
+          </div>
+        </div>
+        <br>
+        <label for="threshold" style="font-weight: bold; font-size:medium;">Temperature Threshold (°C):</label>
+        <input type="number" id="threshold" class="threshold-input" value="30">
+        <p class="alert-message" style="color: red; font-weight: bold; font-size:medium;"></p>
+      </div>
+      <div class="card">
+        <h5 style="font-weight: bold; font-size:medium; display:flex;justify-content: center;">24-Hour Forecast Summary
+        </h5>
+        <div class="forecast-avg-temp" style="font-size:medium;">Avg Temp (next 24 hours): </div>
+        <br>
+        <div class="forecast-avg-humidity" style="font-size:medium;">Avg Humidity (next 24 hours): </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+  <div class="bottomcard">
+    <div class="card3">
+      <h5>Weather forecast</h5>
+      <div class="boxes">
+        <div class="box">
+          <div class="dt1 ddt"></div>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon1"></img>
+          <div class="temp1"></div>
+        </div>
+
+        <div class="box">
+          <div class="dt2 ddt"></div>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon2"></img>
+          <div class="temp2"></div>
+        </div>
+
+        <div class="box">
+          <div class="dt3 ddt"></div>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon3"></img>
+          <div class="temp3"></div>
+        </div>
+
+        <div class="box">
+          <div class="dt4 ddt"></div>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon4"></img>
+          <div class="temp4"></div>
+        </div>
+
+        <div class="box">
+          <div class="dt5 ddt"></div>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon5"></img>
+          <div class="temp5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<footer></footer>
+
+</html>
