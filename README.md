@@ -59,3 +59,7 @@ To define and evaluate rules based on user attributes, the following endpoints a
 The source code, build scripts, and configurations are hosted on Github. All development activity, including version control, branches, and pull requests, is managed through the repository.
 
 - Repository URL: https://github.com/vaibhavi-roy/Real-Time-Weather-App
+
+# Live Website
+
+-Link: https://vaibhavi-roy.github.io/Real-Time-Weather-App/
