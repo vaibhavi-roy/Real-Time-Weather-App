@@ -62,4 +62,4 @@ The source code, build scripts, and configurations are hosted on Github. All dev
 
 # Live Website
 
-- Repository URL: https://vaibhavi-roy.github.io/Real-Time-Weather-App/
+- Link: https://vaibhavi-roy.github.io/Real-Time-Weather-App/
